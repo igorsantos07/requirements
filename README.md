@@ -37,13 +37,13 @@ A list of some basic endpoints that must be implemented:
 * (DELETE) /contacts/:id/address (should we allow this?)
 
 # Responses
-TBI
+[TBD](https://github.com/RESTBench/requirements/issues/1)
 
 # Documentation
-TBI
+[TBD](https://github.com/RESTBench/requirements/issues/2)
 
 # Tests
-TBI
+[TBD](https://github.com/RESTBench/requirements/issues/3)
 
 # CI
-TBI
+[TBD](https://github.com/RESTBench/requirements/issues/4)
