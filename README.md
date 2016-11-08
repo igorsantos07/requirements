@@ -26,15 +26,15 @@ A list of some basic endpoints that must be implemented:
 * (POST) /login
 
 * (GET) /contacts
-* (GET) /contacts/3
+* (GET) /contacts/:id
 * (POST) /contacts
-* (PUT) /contacts/3
-* (DELETE) /contacts/3
+* (PUT) /contacts/:id
+* (DELETE) /contacts/:id
 
-* (GET) /contacts/3/address
-* (POST) /contacts/3/address (should this be sent within the parent's request?)
-* (PUT) /contacts/3/address
-* (DELETE) /contacts/3/address (should we allow this?)
+* (GET) /contacts/:id/address
+* (POST) /contacts/:id/address (should this be sent within the parent's request?)
+* (PUT) /contacts/:id/address
+* (DELETE) /contacts/:id/address (should we allow this?)
 
 # Responses
 TBI
