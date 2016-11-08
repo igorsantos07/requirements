@@ -2,9 +2,9 @@
 Here we list the minimum requirements that a repository must fulfill.
 
 # Requirements
-* [JWT] Authentication;
-* A CRUD implementation for a root model;
-* A CRUD for Relationships.
+* [JWT] Authentication
+* A CRUD implementation for a root model
+* A CRUD for Relationships
 
 All CRUD implementations must implement:
 * At least one *Create* endpoint must be available via a *POST* request
