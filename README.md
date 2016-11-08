@@ -2,7 +2,7 @@
 Here we list the minimum requirements that a repository must fulfill.
 
 # Requirements
-* JWT Authentication
+* [JWT] Authentication
 * A CRUD implementation for a root model
 * A CRUD for Relationships
 
@@ -23,18 +23,25 @@ Creating the tables, seeding data, queries etc. all must be as agnostic as possi
 
 # Endpoints
 A list of some basic endpoints that must be implemented:
-* (POST) /login
 
-* (GET) /contacts
-* (GET) /contacts/:id
-* (POST) /contacts
-* (PUT) /contacts/:id
-* (DELETE) /contacts/:id
+## Authentication
+* `POST /login`
 
-* (GET) /contacts/:id/address
-* (POST) /contacts/:id/address (should this be sent within the parent's request?)
-* (PUT) /contacts/:id/address
-* (DELETE) /contacts/:id/address (should we allow this?)
+## Main resource
+* `GET /contacts`
+* `GET /contacts/:id`
+* `POST /contacts`
+* `PUT /contacts/:id`
+* `DELETE /contacts/:id`
+
+## Sub-resource / relationship
+> Question: must the sub-resource stay under its parent endpoint?
+
+* `GET /contacts/:id/address`
+* `GET /contacts/:id/address/:addr_id`
+* `POST /contacts/:id/address`
+* `PUT /contacts/:id/address/:addr_id`
+* `DELETE /contacts/:id/address/:addr_id`
 
 # Responses
 [TBD](https://github.com/RESTBench/requirements/issues/1)
@@ -47,3 +54,6 @@ A list of some basic endpoints that must be implemented:
 
 # CI
 [TBD](https://github.com/RESTBench/requirements/issues/4)
+
+
+  [JWT]: https://jwt.io/
