@@ -2,19 +2,20 @@
 Here we list the minimum requirements that a repository must fulfill.
 
 # Requirements
-* [JWT] Authentication
-* A CRUD implementation for a root model
-* A CRUD for Relationships
+* [JWT] Authentication;
+* A CRUD implementation for a root model;
+* A CRUD for Relationships.
 
 All CRUD implementations must implement:
-* At least one *Create* endpoint must be available via a *Post* request.
-* At least one *Read* endpoint must be available via a *Get* request.
-* At least one *Update* endpoint must be available via a *Put* request.
-* At least one *Delete* endpoint must be available via a *Delete* request.
+* At least one *Create* endpoint must be available via a *POST* request
+* At least one *Read* endpoint must be available via a *GET* request
+* At least one *Update* endpoint must be available via a *PUT* request
+* At least one *Delete* endpoint must be available via a *DELETE* request
 
-The HEAD and OPTIONS implementation are optional.
-
-The PATCH implementation is optional.
+The following verb' implementations are optional, but if done, should behave as follows:
+* *HEAD*: ???
+* *OPTIONS*: ???
+* *PATCH*: allow for partial content update - *PUT* is used to completely replace the endpoint contents
 
 # Database
 All implementations must use only the framework's tool to access the database.
